@@ -1,6 +1,6 @@
 WIP build of a game adaptation of the story "This is Not My Hat" by Jon Klassen.
 
-Gameplay consists of Shoot 'em up gameplay, and will follow a narrative where (at the moment) the small fish from the story
+Gameplay consists of Shoot 'Em Up gameplay, and will follow a narrative where (at the moment) the small fish from the story
 fights back against the big fish from whom he stole his (very dashing might I add) hat, as well as the numerous other fish who want
 to kill him and steal the hat for themselves (who can blame them, it's a nice hat)
 
