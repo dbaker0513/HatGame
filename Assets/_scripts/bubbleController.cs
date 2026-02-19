@@ -19,8 +19,13 @@ public class BubbleController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveBubble();
-        ShootBubble();
+
+        //disabled until I can completely rework the code. Clearly my solution 
+        // doesn't work the way I wanted, so will research and ask and find a solution
+
+        
+        /* MoveBubble();
+        ShootBubble(); */
     }
 
 
