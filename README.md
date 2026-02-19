@@ -9,7 +9,8 @@ to kill him and steal the hat for themselves (who can blame them, it's a nice ha
 TO IMPLEMENT:
  - Enemy functionality (attacking, taking damage, dying, etc.)
  - Spawning new waves of enemies as prior ones are defeated
- - Shooting functionality (Proper bubble attack, dealing damage, etc.)
+ - Shooting functionality (Proper bubble attack, dealing damage, etc. Basically fix what I've been trying (and failing) to add)
  - Boss (Big enemy fight against the big fish, basically)
  - Ground collision that works better than what I've got now
  - Multiple levels, and transitioning between them
+ - further improve world. I've got the basic premise and aesthetic laid out, but want to refine later when I have more time
