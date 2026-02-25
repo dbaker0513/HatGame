@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 100000f;
-    public float bubbleSpeed = 2f;
-    public float bubbleTime = 2f;
+    public float speed = 5f;
+    public GameObject bubblePrefab;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +15,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        Shoot();
     }
 
     void MovePlayer()
@@ -66,8 +66,17 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.position = newPos;
         }
         
-        
+    
+
     }
+    void Shoot()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+        }
+    }
+
 
 }
 
