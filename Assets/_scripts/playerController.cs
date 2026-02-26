@@ -4,6 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
     public GameObject bubblePrefab;
+    public int bubbleTimer = 30;
+    public int bubbleCount = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -71,9 +73,11 @@ public class PlayerController : MonoBehaviour
     }
     void Shoot()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        bubbleCount += 1;
+        if (Input.GetKey(KeyCode.Space) && bubbleCount > bubbleTimer)
         {
             Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+            bubbleCount = 0;
         }
     }
 
