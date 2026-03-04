@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bubblePrefab;
     public int bubbleTimer = 30;
     public int bubbleCount = 0;
+      public float health = 5;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -81,6 +82,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void getHit(float damage)
+    {
+        health -= damage;
+
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+        
+    }
 
 }
 
